@@ -339,7 +339,7 @@ function obtenerAtaques() {
 }
 
 function seleccionarMascotaEnemigo(enemigo) {
-    //let mascotaAleatoria = aleatorio(0, mokepones.length -1)
+    let mascotaAleatoria = aleatorio(0, mokepones.length -1)
     
     spanMascotaEnemigo.innerHTML = enemigo.nombre
     ataquesMokeponEnemigo = enemigo.ataques
@@ -468,19 +468,19 @@ function pintarCanvas() {
 
     enviarPosicion(mascotaJugadorObjeto.x, mascotaJugadorObjeto.y)
 
-    /*hipodogueEnemigo.pintarMokepon()
+    hipodogueEnemigo.pintarMokepon()
     capipepoEnemigo.pintarMokepon()
-    ratigueyaEnemigo.pintarMokepon()*/
+    ratigueyaEnemigo.pintarMokepon()
     mokeponesEnemigos.forEach(function(mokepon){
         mokepon.pintarMokepon()
         revisarColision(mokepon)
     })
 
-    /*if(mascotaJugadorObjeto.velocidadX !== 0 || mascotaJugadorObjeto.velocidadY !== 0) {
+    if(mascotaJugadorObjeto.velocidadX !== 0 || mascotaJugadorObjeto.velocidadY !== 0) {
         revisarColision(hipodogueEnemigo)
         revisarColision(capipepoEnemigo)
         revisarColision(ratigueyaEnemigo)
-    }*/
+    }
 }
 
 function enviarPosicion(x, y) {
