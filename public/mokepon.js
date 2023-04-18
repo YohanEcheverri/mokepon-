@@ -205,7 +205,7 @@ function iniciarJuego() {
 }
 
 function unirseAlJuego() {
-    fetch('http://192.168.1.7:8080/unirse')
+    fetch('https://mokepon-git-main-yohanecheverri.vercel.app//unirse')
         .then(function (res) {
             if (res.ok) {
                 res.text()
@@ -243,7 +243,7 @@ function seleccionarMascotaJugador() {
 }
 
 function seleccionarMokepon(mascotaJugador) {
-    fetch(`http://192.168.1.7:8080/mokepon/${jugadorId}`,{
+    fetch(`https://mokepon-git-main-yohanecheverri.vercel.app//mokepon/${jugadorId}`,{
         method: "post",
         headers: {
             "Content-Type": "application/json"
@@ -309,7 +309,7 @@ function secuenciaAtaque() {
 }
 
 function enviarAtaques() {
-    fetch(`http://192.168.1.7:8080/mokepon/${jugadorId}/ataques`, {
+    fetch(`https://mokepon-git-main-yohanecheverri.vercel.app//mokepon/${jugadorId}/ataques`, {
         method: 'post',
         headers: {
             "Content-Type": "application/json"
@@ -323,7 +323,7 @@ function enviarAtaques() {
 }
 
 function obtenerAtaques() {
-    fetch(`http://192.168.1.7:8080/mokepon/${enemigoId}/ataques`)
+    fetch(`https://mokepon-git-main-yohanecheverri.vercel.app//mokepon/${enemigoId}/ataques`)
         .then(function (res) {
             if (res.ok) {
                 res.json()
@@ -484,7 +484,7 @@ function pintarCanvas() {
 }
 
 function enviarPosicion(x, y) {
-    fetch(`http://192.168.1.7:8080/mokepon/${jugadorId}/posicion`, {
+    fetch(`https://mokepon-git-main-yohanecheverri.vercel.app//mokepon/${jugadorId}/posicion`, {
         method: 'post',
         headers: {
             "content-Type": "application/json"
