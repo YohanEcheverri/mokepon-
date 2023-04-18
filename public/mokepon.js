@@ -296,7 +296,7 @@ function secuenciaAtaque() {
                 boton.style.background = '#2f58'
                 boton.disabled = true 
             }
-            //ataqueAleatorioEnemigo()
+            ataqueAleatorioEnemigo()
             if (ataqueJugador.length === 5) {
                 enviarAtaques()
             }
@@ -339,7 +339,7 @@ function obtenerAtaques() {
 }
 
 function seleccionarMascotaEnemigo(enemigo) {
-    let mascotaAleatoria = aleatorio(0, mokepones.length -1)
+    //let mascotaAleatoria = aleatorio(0, mokepones.length -1)
     
     spanMascotaEnemigo.innerHTML = enemigo.nombre
     ataquesMokeponEnemigo = enemigo.ataques
